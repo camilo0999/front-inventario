@@ -1,0 +1,139 @@
+/* Estilos generales del contenedor */
+.product-table-container {
+    background-color: white;
+    padding: 24px;
+    border-radius: 0;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Estilos para el encabezado de la tabla */
+  .table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  
+  .search-input {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .search-input:focus {
+    border-color: #3b82f6;
+  }
+  
+  .header-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .add-product-button {
+    padding: 12px 24px;
+    background-color: #10b981;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-product-button:hover {
+    background-color: #059669;
+  }
+  
+  .rows-per-page {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .rows-per-page select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .rows-per-page select:focus {
+    border-color: #3b82f6;
+  }
+  
+  /* Estilos para el título de la tabla */
+  .table-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+  
+  /* Estilos para la tabla */
+  .table-wrapper {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 24px;
+  }
+  
+  .product-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .product-table th,
+  .product-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .product-table th {
+    background-color: #f9fafb;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .product-table th:hover {
+    background-color: #e5e7eb;
+  }
+  
+  .product-table tr:hover {
+    background-color: #f9fafb;
+  }
+  
+  /* Estilos para la paginación */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .pagination-button {
+    padding: 12px 24px;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pagination-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .pagination-button:hover:not(:disabled) {
+    background-color: #2563eb;
+  }
